@@ -1,0 +1,7 @@
+class A - 32 bits -> ip
+
+class A  8bit N, 24bit host
+
+class B  16bit N, 16bit host
+
+class C 24bit N, 8bit host
