@@ -14,6 +14,40 @@
 #commit
 #commit
 
+config t
+int f0/0
+ip address 192.168.1.1 255.255.255.0
+no shut
+exit
+
+
+Assigning route
+1} RIP Version 2
+	do show ip route
+	router rip
+	version 2
+	network 192.168.1.0
+	.......
+
+2} OSPF
+	do show ip route
+	router ospf 100
+	network 192.168.1.0 0.0.0.255 area 0
+	......
+
+3} EIGRP
+	do show ip route
+	router eigrp 25
+	network 192.168.1.0
+	.......
+
+Assigning ip to pc
+
+	ip 192.168.5.10/24 192.168.5.1
+
+Ping Command
+	ping 192.168.6.10
+
 
 
 
